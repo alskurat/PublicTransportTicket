@@ -24,8 +24,10 @@ DEFINES += QT_DEPRECATED_WARNINGS
 
 
 SOURCES += main.cpp\
-        mainwindow.cpp
+        mainwindow.cpp \
+    tripcounter.cpp
 
-HEADERS  += mainwindow.h
+HEADERS  += mainwindow.h \
+    tripcounter.h
 
 FORMS    += mainwindow.ui

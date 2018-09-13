@@ -3,6 +3,8 @@
 
 #include <QMainWindow>
 
+#include "tripcounter.h"
+
 namespace Ui {
 class MainWindow;
 }
@@ -23,7 +25,7 @@ private:
     void all();
     void process_line(QString line);
 
-    int counter[4];
+    QList<TripCounter*> trip;
 
     int total;
 
