@@ -14,6 +14,8 @@ MainWindow::MainWindow(QWidget *parent) :
 {
     ui->setupUi(this);
 
+    ui->centralWidget->setLayout(ui->horizontalLayout);
+
     trip.append(new SubwayTripCounter());
     trip.append(new LandTransportTripCounter("трамвай"));
     trip.append(new LandTransportTripCounter("троллейбус"));

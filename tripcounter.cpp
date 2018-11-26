@@ -10,9 +10,9 @@ SubwayTripCounter::SubwayTripCounter()
     mName =  "метро";
 }
 
-int SubwayTripCounter::fullCost()
+unsigned int SubwayTripCounter::fullCost()
 {
-    int total = 0;
+    unsigned int total = 0;
     if     (mCounter < 11 )        total = 36 * mCounter;
     else if(mCounter < 21 )        total = 360 + 35 * mCounter;
     else if(mCounter < 31 )        total = 350+360 + 34 * mCounter;
@@ -27,9 +27,9 @@ LandTransportTripCounter::LandTransportTripCounter(QString name)
     mName = name;
 }
 
-int LandTransportTripCounter::fullCost()
+unsigned int LandTransportTripCounter::fullCost()
 {
-    int total = 0;
+    unsigned int total = 0;
 
     if     (mCounter < 11 )     total = 31 * mCounter;
     else if(mCounter < 21 )     total = 310 + 30 * mCounter;
